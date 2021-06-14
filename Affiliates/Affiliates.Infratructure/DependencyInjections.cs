@@ -27,7 +27,6 @@ namespace Affiliates.Infratructure
 					client.AllowedGrantTypes = new List<string> { GrantTypes.Password };
 					client.AllowOfflineAccess = true;
 					client.RefreshTokenUsage = IdentityServer4.Models.TokenUsage.OneTimeOnly;
-					client.AccessTokenLifetime = 60;
 				});
 
 			services.AddAuthentication()
